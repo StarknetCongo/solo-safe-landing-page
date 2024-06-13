@@ -1,5 +1,7 @@
 import { ArrowPathIcon, CloudArrowUpIcon, LockClosedIcon } from '@heroicons/react/20/solid'
 
+import SoloSafeArchitecture from '../../../assets/img/architecture.jpeg';
+
 const features = [
   {
     name: 'Push to deploy',
@@ -29,16 +31,23 @@ export default function FeatureSection() {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
-          <h2 className="text-base font-semibold leading-7 text-indigo-600">Deploy faster</h2>
+          <h2 className="text-base font-semibold leading-7 text-solo-safe-1">SoloSafe</h2>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Everything you need to deploy your app
+            Transact offline with confidence
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-            pulvinar et feugiat blandit at. In mi viverra elit nunc.  
+            SoloSafe is a simple, secure, and reliable way to transact offline. Using the Zero Knowledge Proof (ZKP) technology and the power of Starknet, SoloSafe ensures that your transactions are secure over the internet or bluetooth.
           </p>
+
+          <p className='my-8'>
+            <a href="https://laced-eggnog-ce7.notion.site/SoloSafe-Enabling-Secure-Offline-Payments-in-Urban-and-Rural-Environments-465949692768412fae371a7920c8e508" className='bg-solo-safe-1 text-white px-4 py-2 rounded-md'>Read our whitepaper</a>
+          </p>
+
+          <div className='text-center'>
+            <img src={SoloSafeArchitecture} className='w-[300px] md:w-[500px] inline' alt='SoloSafe architecture'/>
+          </div>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+        {/* <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-3">
             {features.map((feature) => (
               <div key={feature.name} className="flex flex-col">
@@ -57,7 +66,7 @@ export default function FeatureSection() {
               </div>
             ))}
           </dl>
-        </div>
+        </div> */}
       </div>
     </div>
   )
