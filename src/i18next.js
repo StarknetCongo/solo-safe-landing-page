@@ -16,7 +16,7 @@ i18next
     failingLng: 'en',
     // Using simple hardcoded resources for simple example
     resources: {
-      fr: { translation: en },
+      en: { translation: en },
     },
   })
 
