@@ -16,18 +16,18 @@ const Header = () => {
 
   return (
     <div>
-      <nav>
+      <nav className=" fixed w-full z-50 top-0 ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
             to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <img
+            {/* <img
               src="/favicon.png"
               className="h-8"
               alt="logo-place
             "
-            />
+            /> */}
             <span className="self-center text-xl font-semibold whitespace-nowrap ">
               soloWallet
             </span>
@@ -89,13 +89,11 @@ const Header = () => {
           </div>
           <div
             className={`items-center justify-between ${
-              isMenuOpen
-                ? "block bg-white dark:bg-gray-900 text-black  dark:text-white"
-                : "hidden"
-            } w-full md:flex md:w-auto md:order-1`}
+              isMenuOpen ? "block bg-white  text-black" : "hidden"
+            } w-full md:flex md:w-auto  md:order-1`}
             id="navbar-sticky"
           >
-            <ul className="flex flex-col justify-end p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0   dark:border-gray-700">
+            <ul className="flex w-full  flex-col gap-2 p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row  md:mt-0 md:border-0   dark:border-gray-700">
               <li>
                 <Link to="/" onClick={() => setIsMenuOpen(false)}>
                   Acceuil
@@ -104,21 +102,6 @@ const Header = () => {
               <li>
                 <Link to="/about" onClick={() => setIsMenuOpen(false)}>
                   Apropos
-                </Link>
-              </li>
-              <li>
-                <Link to="/resource" onClick={() => setIsMenuOpen(false)}>
-                  Resources
-                </Link>
-              </li>
-              <li>
-                <Link to="/portofolio" onClick={() => setIsMenuOpen(false)}>
-                  Portofolio
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog" onClick={() => setIsMenuOpen(false)}>
-                  Blog
                 </Link>
               </li>
             </ul>
