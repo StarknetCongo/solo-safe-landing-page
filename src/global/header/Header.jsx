@@ -8,15 +8,9 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // const getLinkClass = (path) => {
-  //   return router === path
-  //     ? "block py-2 px-3 text-white bg-solo-safe-1-700 rounded md:bg-transparent md:text-solbg-solo-safe-1-700 md:p-0 md:dark:text-solbg-solo-safe-1-500"
-  //     : "block py-2 px-3  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-solbg-solo-safe-1-700 md:p-0 md:dark:hover:text-solbg-solo-safe-1-500  dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700";
-  // };
-
   return (
-    <div>
-      <nav className=" fixed w-full z-50 top-0 ">
+    <div className=" mb-[100px]">
+      <nav className=" fixed w-full z-50 top-0 bg-white shadow-sm ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <Link
             to="/"
@@ -34,7 +28,7 @@ const Header = () => {
           </Link>
 
           <div className="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <Link to="/contact">
+            <Link to="/">
               <button
                 type="button"
                 className="text-white bg-solo-safe-1 hover:bg-solo-safe-1 focus:ring-4 focus:outline-none focus:ring-solbg-solo-safe-1 font-medium rounded-lg text-sm sm:px-12 px-4 py-2 text-center dark:bg-solo-safe-1 dark:hover:bg-solo-safe-1 dark:focus:ring-solbg-solo-safe"

@@ -865,21 +865,9 @@ video {
   transform-style: preserve-3d;
 }
 
-.app-hero-content-1,
-.app-hero-content-2,
+
 .app-hero-content-3 {
   will-change: transform;
-}
-
-.app-hero-content-1 {
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(15.0921deg)
-    rotateY(-15.0921deg) rotateZ(15.0921deg) skew(0deg, 0deg);
-}
-
-.app-hero-content-2 {
-  transform: translate3d(0px, 2.5764em, -200px) scale3d(1, 1, 1)
-    rotateX(15.0921deg) rotateY(-15.0921deg) rotateZ(15.0921deg)
-    skew(0deg, 0deg);
 }
 
 .app-hero-content-3 {
@@ -893,15 +881,34 @@ video {
   height: auto;
 }
 
-.app-hero-content-1,
-.app-hero-content-2,
+
 .app-hero-content-3 {
   transition: transform 0.5s ease-in-out;
 }
 
-.app-hero-content-1:hover,
-.app-hero-content-2:hover,
+
 .app-hero-content-3:hover {
   transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1.1) rotateX(0deg)
     rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
+@media (max-width: 640px) {
+  .app-hero-content-3 {
+    transform: none;
+  }
+  .image-app-hero {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+  .app-hero {
+    opacity: 1;
+    transform: none;
+  }
+
+  .app-hero-wrapper {
+    will-change: transform;
+    transform: none;
+    transform-style: none;
+  }
 }
