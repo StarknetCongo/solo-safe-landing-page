@@ -865,7 +865,6 @@ video {
   transform-style: preserve-3d;
 }
 
-
 .app-hero-content-3 {
   will-change: transform;
 }
@@ -881,23 +880,22 @@ video {
   height: auto;
 }
 
-
 .app-hero-content-3 {
   transition: transform 0.5s ease-in-out;
 }
-
 
 .app-hero-content-3:hover {
   transform: translate3d(0px, 0px, 0px) scale3d(1.1, 1.1, 1.1) rotateX(0deg)
     rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 }
 
-@media (max-width: 640px) {
+@media (max-width: 1024px) {
   .app-hero-content-3 {
     transform: none;
+    padding: 50px;
   }
   .image-app-hero {
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
     margin: 0 auto;
   }
