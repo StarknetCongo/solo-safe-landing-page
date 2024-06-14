@@ -3,12 +3,12 @@ import React from 'react';
 const HiroSection = () => (
   <div>
     <section className="">
-      <div className="grid max-w-screen-xl gap-12 px-6  py-8 mx-auto lg:px-0 lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+      <div className="grid max-w-screen-xl gap-8 px-6 lg:px-4  py-8 mx-auto lg:gap-12 xl:gap-12 lg:py-16 lg:grid-cols-12">
         <div className=" place-self-center lg:col-span-7 text-center lg:text-start">
-          <h1 className="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl ">
+          <h1 className=" mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl ">
             Solo wallet is a Transact offline
           </h1>
-          <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+          <p className=" mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
             SoloSafe is a simple, secure, and reliable way to transact offline.
             Using the Zero Knowledge Proof (ZKP) technology and the power of
             Starknet, SoloSafe ensures that your transactions are secure over
