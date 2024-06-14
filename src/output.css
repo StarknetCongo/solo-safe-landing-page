@@ -892,7 +892,6 @@ video {
 @media (max-width: 1024px) {
   .app-hero-content-3 {
     transform: none;
-    padding: 0 50px;
   }
   .image-app-hero {
     max-width: auto;
@@ -902,6 +901,7 @@ video {
   .app-hero {
     opacity: 1;
     transform: none;
+    padding: 0 10px;
   }
 
   .app-hero-wrapper {
