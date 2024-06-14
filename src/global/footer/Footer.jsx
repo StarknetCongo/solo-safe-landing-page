@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const Footer = () => {
   return (
@@ -21,22 +21,22 @@ const Footer = () => {
             </a>
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 ">
               <li>
-                <a href="#" class="hover:underline me-4 md:me-6">
+                <a href="#" className="hover:underline me-4 md:me-6">
                   Discord
                 </a>
               </li>
               <li>
-                <a href="#" class="hover:underline me-4 md:me-6">
+                <a href="#" className="hover:underline me-4 md:me-6">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="#" class="hover:underline me-4 md:me-6">
+                <a href="#" className="hover:underline me-4 md:me-6">
                   Github
                 </a>
               </li>
               <li>
-                <a href="#" class="hover:underline">
+                <a href="#" className="hover:underline">
                   Telegram
                 </a>
               </li>
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
           <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
           <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © {new Date().getFullYear()}{" "}
+            © {new Date().getFullYear()}{' '}
             <a href="/" className="hover:underline">
               Starknet
             </a>

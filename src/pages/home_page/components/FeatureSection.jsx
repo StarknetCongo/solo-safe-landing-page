@@ -2,32 +2,32 @@ import {
   ArrowPathIcon,
   CloudArrowUpIcon,
   LockClosedIcon,
-} from "@heroicons/react/20/solid";
+} from '@heroicons/react/20/solid';
 
-import SoloSafeArchitecture from "../../../assets/img/architecture.jpeg";
+import SoloSafeArchitecture from '../../../assets/img/architecture.jpeg';
 
 /* eslint-disable no-unused-vars */
 const features = [
   {
-    name: "Push to deploy",
+    name: 'Push to deploy',
     description:
-      "Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus." +
-      " Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.",
-    href: "#",
+      'Commodo nec sagittis tortor mauris sed. Turpis tortor quis scelerisque diam id accumsan nullam tempus.' +
+      ' Pulvinar etiam lacus volutpat eu. Phasellus praesent ligula sit faucibus.',
+    href: '#',
     icon: CloudArrowUpIcon,
   },
   {
-    name: "SSL certificates",
+    name: 'SSL certificates',
     description:
-      "Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.",
-    href: "#",
+      'Pellentesque enim a commodo malesuada turpis eleifend risus. Facilisis donec placerat sapien consequat tempor fermentum nibh.',
+    href: '#',
     icon: LockClosedIcon,
   },
   {
-    name: "Simple queues",
+    name: 'Simple queues',
     description:
-      "Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.",
-    href: "#",
+      'Pellentesque sit elit congue ante nec amet. Dolor aenean curabitur viverra suspendisse iaculis eget. Nec mollis placerat ultricies euismod ut condimentum.',
+    href: '#',
     icon: ArrowPathIcon,
   },
 ];

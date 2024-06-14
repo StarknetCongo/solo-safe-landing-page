@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -42,7 +42,7 @@ const Header = () => {
               type="button"
               className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-sticky"
-              aria-expanded={isMenuOpen ? "true" : "false"}
+              aria-expanded={isMenuOpen ? 'true' : 'false'}
             >
               <span className="sr-only">Open main menu</span>
               {!isMenuOpen ? (
@@ -83,7 +83,7 @@ const Header = () => {
           </div>
           <div
             className={`items-center justify-between ${
-              isMenuOpen ? "block bg-white  text-black" : "hidden"
+              isMenuOpen ? 'block bg-white  text-black' : 'hidden'
             } w-full md:flex md:w-auto  md:order-1`}
             id="navbar-sticky"
           >
