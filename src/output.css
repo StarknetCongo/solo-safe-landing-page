@@ -1,17 +1,52 @@
 /*
 ! tailwindcss v3.4.4 | MIT License | https://tailwindcss.com
 */
-
-/*
-1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
-2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
-*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+::before,
+::after {
+  --tw-content: "";
+}
+
+/*
+Correct the cursor style of increment and decrement buttons in Safari.
+*/
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/*
+Remove the inner padding in Chrome and Safari on macOS.
+*/
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Change font properties to `inherit` in Safari.
+*/
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+
+  /* 1 */
+  font: inherit;
+
+  /* 2 */
+}
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
 *,
 ::before,
 ::after {
@@ -43,20 +78,30 @@
 html,
 :host {
   line-height: 1.5;
+
   /* 1 */
   -webkit-text-size-adjust: 100%;
+
   /* 2 */
+
   /* 3 */
   tab-size: 4;
+
   /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
+
   /* 5 */
   font-variation-settings: normal;
+
   /* 6 */
   -webkit-tap-highlight-color: transparent;
+
   /* 7 */
 }
 
@@ -67,8 +112,10 @@ html,
 
 body {
   margin: 0;
+
   /* 1 */
   line-height: inherit;
+
   /* 2 */
 }
 
@@ -80,10 +127,13 @@ body {
 
 hr {
   height: 0;
+
   /* 1 */
   color: inherit;
+
   /* 2 */
   border-top-width: 1px;
+
   /* 3 */
 }
 
@@ -93,6 +143,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
   text-decoration: underline dotted;
 }
 
@@ -141,12 +192,18 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
+
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
   /* 1 */
   font-feature-settings: normal;
+
   /* 2 */
   font-variation-settings: normal;
+
   /* 3 */
   font-size: 1em;
+
   /* 4 */
 }
 
@@ -186,10 +243,13 @@ sup {
 
 table {
   text-indent: 0;
+
   /* 1 */
   border-color: inherit;
+
   /* 2 */
   border-collapse: collapse;
+
   /* 3 */
 }
 
@@ -205,24 +265,34 @@ optgroup,
 select,
 textarea {
   font-family: inherit;
+
   /* 1 */
   font-feature-settings: inherit;
+
   /* 1 */
   font-variation-settings: inherit;
+
   /* 1 */
   font-size: 100%;
+
   /* 1 */
   font-weight: inherit;
+
   /* 1 */
   line-height: inherit;
+
   /* 1 */
   letter-spacing: inherit;
+
   /* 1 */
   color: inherit;
+
   /* 1 */
   margin: 0;
+
   /* 2 */
   padding: 0;
+
   /* 3 */
 }
 
@@ -245,10 +315,13 @@ input:where([type="button"]),
 input:where([type="reset"]),
 input:where([type="submit"]) {
   -webkit-appearance: button;
+
   /* 1 */
   background-color: transparent;
+
   /* 2 */
   background-image: none;
+
   /* 2 */
 }
 
@@ -277,43 +350,16 @@ progress {
 }
 
 /*
-Correct the cursor style of increment and decrement buttons in Safari.
-*/
-
-::-webkit-inner-spin-button,
-::-webkit-outer-spin-button {
-  height: auto;
-}
-
-/*
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
 
 [type="search"] {
   -webkit-appearance: textfield;
+
   /* 1 */
   outline-offset: -2px;
-  /* 2 */
-}
 
-/*
-Remove the inner padding in Chrome and Safari on macOS.
-*/
-
-::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-/*
-1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to `inherit` in Safari.
-*/
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
   /* 2 */
 }
 
@@ -386,8 +432,10 @@ textarea {
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
+
   /* 1 */
   color: #9ca3af;
+
   /* 2 */
 }
 
@@ -423,8 +471,10 @@ iframe,
 embed,
 object {
   display: block;
+
   /* 1 */
   vertical-align: middle;
+
   /* 2 */
 }
 
@@ -444,6 +494,27 @@ video {
   display: none;
 }
 
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
+*/
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+
+  /* 1 */
+  border-width: 0;
+
+  /* 2 */
+  border-style: solid;
+
+  /* 2 */
+  border-color: #e5e7eb;
+
+  /* 2 */
+}
 *,
 ::before,
 ::after {
@@ -459,7 +530,20 @@ video {
   --tw-pan-x: ;
   --tw-pan-y: ;
   --tw-pinch-zoom: ;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
   --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0;
   --tw-gradient-from-position: ;
   --tw-gradient-via-position: ;
   --tw-gradient-to-position: ;
@@ -476,6 +560,28 @@ video {
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+  --tw-contain-size: ;
+  --tw-contain-layout: ;
+  --tw-contain-paint: ;
+  --tw-contain-style: ;
   --tw-blur: ;
   --tw-brightness: ;
   --tw-contrast: ;
@@ -513,7 +619,20 @@ video {
   --tw-pan-x: ;
   --tw-pan-y: ;
   --tw-pinch-zoom: ;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
   --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position: ;
+  --tw-gradient-via-position: ;
+  --tw-gradient-to-position: ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
+  --tw-ring-offset-width: 0;
   --tw-gradient-from-position: ;
   --tw-gradient-via-position: ;
   --tw-gradient-to-position: ;
@@ -552,6 +671,28 @@ video {
   --tw-contain-layout: ;
   --tw-contain-paint: ;
   --tw-contain-style: ;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
+  --tw-contain-size: ;
+  --tw-contain-layout: ;
+  --tw-contain-paint: ;
+  --tw-contain-style: ;
 }
 
 .absolute {
@@ -563,7 +704,7 @@ video {
 }
 
 .bottom-0 {
-  bottom: 0px;
+  bottom: 0;
 }
 
 .mx-auto {
@@ -696,11 +837,13 @@ video {
 
 .bg-white {
   --tw-bg-opacity: 1;
+
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-solo-safe-1 {
   --tw-bg-opacity: 1;
+
   background-color: rgb(129 70 156 / var(--tw-bg-opacity));
 }
 
@@ -774,26 +917,31 @@ video {
 
 .text-gray-600 {
   --tw-text-opacity: 1;
+
   color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .text-gray-900 {
   --tw-text-opacity: 1;
+
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .text-indigo-600 {
   --tw-text-opacity: 1;
+
   color: rgb(79 70 229 / var(--tw-text-opacity));
 }
 
 .text-solo-safe-1 {
   --tw-text-opacity: 1;
+
   color: rgb(129 70 156 / var(--tw-text-opacity));
 }
 
 .text-white {
   --tw-text-opacity: 1;
+
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
@@ -849,7 +997,6 @@ video {
     text-align: center;
   }
 }
-// hiro animation
 
 .app-hero {
   opacity: 1;
