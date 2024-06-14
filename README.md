@@ -13,7 +13,7 @@ To run the project, please, follow the steps below:
 
 1. Clone the repository
 2. Run `npm install` to install the dependencies
-3. Run `npx eslint "**/*.{js,jsx}" --fix` to automatically fix any ESLint errors in your JavaScript and JSX file (optional)
+3. Run `npm install --save-dev prettier --force` to automatically fix any ESLint errors in your JavaScript and JSX file (optional)
 4. Run `npx stylelint "**/*.{css,scss}" --fix` to automatically fix any Stylelint errors in your CSS and SCSS files (optional)
 5. Run `npm start` to start the project
 6. You can now view solo-safe-landing-page in the browser. Navigate to http://localhost:3000
