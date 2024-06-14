@@ -892,10 +892,10 @@ video {
 @media (max-width: 1024px) {
   .app-hero-content-3 {
     transform: none;
-    padding: 50px;
+    padding: 0 50px;
   }
   .image-app-hero {
-    max-width: 100%;
+    max-width: auto;
     height: auto;
     margin: 0 auto;
   }
