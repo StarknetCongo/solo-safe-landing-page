@@ -1,13 +1,13 @@
 import i18next from "../../i18next";
 import FeatureSection from "./components/FeatureSection";
-import HiroSection from "./components/hiro_section/HiroSection";
+import HeroSection from "./components/hero_section/HeroSection";
 
 const { t } = i18next;
 
 export default function HomePage() {
   return (
     <div>
-      <HiroSection />
+      <HeroSection />
       <FeatureSection />
     </div>
   );
